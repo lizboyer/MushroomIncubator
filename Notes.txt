@@ -1,0 +1,1 @@
+Testing/Wiring Guide: https://learn.adafruit.com/adafruit-1-14-240x135-color-tft-breakout/arduino-wiring-test
