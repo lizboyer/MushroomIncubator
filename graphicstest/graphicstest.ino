@@ -138,47 +138,49 @@ void setup(void) {
   tftPrintTest();
   delay(4000);
 
-  // a single pixel
-  tft.drawPixel(tft.width()/2, tft.height()/2, ST77XX_GREEN);
-  delay(500);
+//  // a single pixel
+//  tft.drawPixel(tft.width()/2, tft.height()/2, ST77XX_GREEN);
+//  delay(500);
+//
+//  // line draw test
+//  testlines(ST77XX_YELLOW);
+//  delay(500);
+//
+//  // optimized lines
+//  testfastlines(ST77XX_RED, ST77XX_BLUE);
+//  delay(500);
+//
+//  testdrawrects(ST77XX_GREEN);
+//  delay(500);
+//
+//  testfillrects(ST77XX_YELLOW, ST77XX_MAGENTA);
+//  delay(500);
+//
+//  tft.fillScreen(ST77XX_BLACK);
+//  testfillcircles(10, ST77XX_BLUE);
+//  testdrawcircles(10, ST77XX_WHITE);
+//  delay(500);
 
-  // line draw test
-  testlines(ST77XX_YELLOW);
-  delay(500);
-
-  // optimized lines
-  testfastlines(ST77XX_RED, ST77XX_BLUE);
-  delay(500);
-
-  testdrawrects(ST77XX_GREEN);
-  delay(500);
-
-  testfillrects(ST77XX_YELLOW, ST77XX_MAGENTA);
-  delay(500);
-
-  tft.fillScreen(ST77XX_BLACK);
-  testfillcircles(10, ST77XX_BLUE);
-  testdrawcircles(10, ST77XX_WHITE);
-  delay(500);
-
-  testroundrects();
-  delay(500);
-
-  testtriangles();
-  delay(500);
-
-  mediabuttons();
-  delay(500);
-
-  Serial.println("done");
-  delay(1000);
+//  testroundrects();
+//  delay(500);
+//
+//  testtriangles();
+//  delay(500);
+//
+//  mediabuttons();
+//  delay(500);
+//
+//  Serial.println("done");
+//  delay(1000);
 }
 
 void loop() {
-  tft.invertDisplay(true);
-  delay(500);
-  tft.invertDisplay(false);
-  delay(500);
+  tftPrintTest();
+  delay(4000);
+//  tft.invertDisplay(true);
+//  delay(500);
+//  tft.invertDisplay(false);
+//  delay(500);
 }
 
 void testlines(uint16_t color) {
@@ -351,21 +353,21 @@ void tftPrintTest() {
 
 void mediabuttons() {
   // play
-  tft.fillScreen(ST77XX_BLACK);
-  tft.fillRoundRect(25, 10, 78, 60, 8, ST77XX_WHITE);
-  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_RED);
-  delay(500);
-  // pause
-  tft.fillRoundRect(25, 90, 78, 60, 8, ST77XX_WHITE);
-  tft.fillRoundRect(39, 98, 20, 45, 5, ST77XX_GREEN);
-  tft.fillRoundRect(69, 98, 20, 45, 5, ST77XX_GREEN);
-  delay(500);
-  // play color
-  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_BLUE);
-  delay(50);
-  // pause color
-  tft.fillRoundRect(39, 98, 20, 45, 5, ST77XX_RED);
-  tft.fillRoundRect(69, 98, 20, 45, 5, ST77XX_RED);
-  // play color
-  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_GREEN);
+//  tft.fillScreen(ST77XX_BLACK);
+//  tft.fillRoundRect(25, 10, 78, 60, 8, ST77XX_WHITE);
+//  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_RED);
+//  delay(500);
+//  // pause
+//  tft.fillRoundRect(25, 90, 78, 60, 8, ST77XX_WHITE);
+//  tft.fillRoundRect(39, 98, 20, 45, 5, ST77XX_GREEN);
+//  tft.fillRoundRect(69, 98, 20, 45, 5, ST77XX_GREEN);
+//  delay(500);
+//  // play color
+//  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_BLUE);
+//  delay(50);
+//  // pause color
+//  tft.fillRoundRect(39, 98, 20, 45, 5, ST77XX_RED);
+//  tft.fillRoundRect(69, 98, 20, 45, 5, ST77XX_RED);
+//  // play color
+//  tft.fillTriangle(42, 20, 42, 60, 90, 40, ST77XX_GREEN);
 }
